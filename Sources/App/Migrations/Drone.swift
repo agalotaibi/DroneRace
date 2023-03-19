@@ -6,6 +6,7 @@
 //
 
 import Fluent
+import FluentPostgresDriver
 
 struct Drone: Migration{
     func prepare(on database: FluentKit.Database) -> NIOCore.EventLoopFuture<Void> {
