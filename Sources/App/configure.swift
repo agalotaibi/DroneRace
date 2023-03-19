@@ -15,7 +15,6 @@ public func configure(_ app: Application) throws {
         password: "",
         database: "dronerace"),
         as: .psql)
-    
     app.migrations.add(Pilot())
     app.migrations.add(Drone())
     try app.autoMigrate().wait()
