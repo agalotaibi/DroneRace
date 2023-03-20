@@ -20,12 +20,12 @@ struct DroneControler: RouteCollection {
     }
     
     //-----------------------------------------------
-    //Drone route (get)
+    //Drone route (get all)
     func getAll(req: Request) throws -> EventLoopFuture<[FDrone]> {
         return FDrone.query(on: req.db).all()
     }
     
-    //Drone route (update)
+    //Drone route (update/post)
     func update(req: Request) async throws -> HTTPStatus {
         let newDrone = try req.content.decode(FDrone.self)
         guard let drone = try await FDrone.find(newDrone.id, on: req.db) else {

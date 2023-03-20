@@ -18,12 +18,12 @@ struct PilotControler: RouteCollection {
     }
     
     //-----------------------------------------------
-    //pilot route (get)
+    //pilot route (get all)
     func getAll(req: Request) throws -> EventLoopFuture<[DPilot]> {
         return DPilot.query(on: req.db).all()
     }
     
-    //pilot route (update)
+    //pilot route (update/post)
     func update(req: Request) async throws -> HTTPStatus {
         let newPilot = try req.content.decode(DPilot.self)
         guard let pilot = try await DPilot.find(newPilot.id, on: req.db) else {
