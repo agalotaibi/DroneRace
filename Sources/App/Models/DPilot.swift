@@ -22,17 +22,16 @@ final class DPilot: Model, Content{
     @Field(key: "score")
     var score: Int
     
-    @Field(key: "droneType")
-    var droneType: String
+
     
     init(){}
     
-    init(id: UUID? = nil, pilotName: String, score: Int, droneType: String)  {
+    init(id: UUID? = nil, pilotName: String, score: Int)  {
         
         self.id = id
         self.pilotName = pilotName
         self.score = score
-        self.droneType = droneType
+        
         
     }
 }

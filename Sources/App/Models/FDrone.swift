@@ -10,7 +10,7 @@ import Vapor
 
 
 final class FDrone: Model, Content{
-    static let schema = "pilot"
+    static let schema = "drone"
     
     
     @ID(key: .id)
@@ -21,6 +21,10 @@ final class FDrone: Model, Content{
     
     @Field(key: "feedback")
     var feedback: String
+    
+    @Field(key: "pilotId")
+    var pilotId: String
+    
     
     init(){}
     
