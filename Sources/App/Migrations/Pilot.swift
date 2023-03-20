@@ -21,6 +21,4 @@ struct Pilot: Migration{
         return database.schema("pilot")
             .delete()
     }
-    
-    
 }

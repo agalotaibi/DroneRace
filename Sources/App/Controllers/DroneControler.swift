@@ -10,13 +10,13 @@ import Vapor
 
 struct DroneControler: RouteCollection {
     
-    
     func boot(routes: Vapor.RoutesBuilder) throws {
         let drones = routes.grouped("drones")
         drones.get(use: getAll) //get all
         drones.put(use: update) //update
         drones.delete(":id", use: delete) //delete
         drones.get(":id", use: getById) //get by id
+        drones.post(use: create) //Create
     }
     
     //-----------------------------------------------
@@ -25,7 +25,7 @@ struct DroneControler: RouteCollection {
         return FDrone.query(on: req.db).all()
     }
     
-    //Drone route (update/post)
+    //Drone route (update)
     func update(req: Request) async throws -> HTTPStatus {
         let newDrone = try req.content.decode(FDrone.self)
         guard let drone = try await FDrone.find(newDrone.id, on: req.db) else {
@@ -35,6 +35,13 @@ struct DroneControler: RouteCollection {
         drone.feedback = newDrone.feedback
         try await drone.save(on: req.db)
         return .ok
+    }
+    
+    //Drone route (Create)
+    func create(req: Request) async throws -> FDrone {
+        let drone = try req.content.decode(FDrone.self)
+        try await drone.save(on: req.db)
+        return drone
     }
     
     //Drone route (delete)

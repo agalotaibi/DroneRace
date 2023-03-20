@@ -10,8 +10,7 @@ import Vapor
 
 
 final class FDrone: Model, Content{
-    static let schema = "pilot"
-    
+    static let schema = "drone"
     
     @ID(key: .id)
     var id: UUID?
