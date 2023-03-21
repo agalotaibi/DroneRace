@@ -1,4 +1,4 @@
-![169-drone-racing__FillWzg1NSw0ODFd](https://user-images.githubusercontent.com/68162866/226647355-9004ffb8-6fe2-4ceb-967c-e32dd5e229f7.jpg)
+![fec6916c8ccf202889e69635c27c3378](https://user-images.githubusercontent.com/68162866/226647953-642d5fc2-bb6d-4c92-b8bf-e985ab1779fc.jpg)
 
 # DroneRace
 DroneRace is an API that contains drone pilots information and drone performance level.
