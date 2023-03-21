@@ -22,8 +22,8 @@ final class FDrone: Model, Content{
     @Field(key: "feedback")
     var feedback: String
     
-    @Field(key: "pilotId")
-    var pilotId: String
+//    @Field(key: "pilotId")
+//    var pilotId: String
     
     
     init(){}

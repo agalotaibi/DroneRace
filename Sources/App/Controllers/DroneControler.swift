@@ -11,10 +11,11 @@ import Vapor
 struct DroneControler: RouteCollection {
     func boot(routes: RoutesBuilder) throws {
         let drones = routes.grouped("drone")
-        drones.get(use: getAll)
-        drones.post(use: create)
-        drones.put(use: update)
-        drones.delete( ":id", use: getById)
+        drones.get(use: getAll) //working
+        drones.post(use: create) //working
+        drones.put(use: update) //working
+        drones.delete( ":id", use: delete) //working
+        drones.get( ":id", use: getById) //working
         
         
         //Drone route

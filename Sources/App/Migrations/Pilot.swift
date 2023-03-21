@@ -14,7 +14,6 @@ struct Pilot: Migration{
             .id()
             .field("pilotName", .string, .required)
             .field("score", .int16, .required)
-            .field("droneType", .string, .required)
             .create()
     }
     
