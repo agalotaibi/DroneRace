@@ -1,2 +1,2 @@
 # DroneRace
-# DroneRace is an API that contains drone pilots information and drone performance level 
+DroneRace is an API that contains drone pilots information and drone performance level 
