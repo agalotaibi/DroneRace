@@ -44,3 +44,10 @@ The output depends on the CRUD opration.
 - POST + URL: adds data to the database
 - DELETE + URL: deletes data from the database
 - DELETE + URL + ID: deletes data of a certin pilot
+
+## GET Comand Demo
+https://user-images.githubusercontent.com/68162866/226897142-39b69208-fd6c-46fb-ba10-0c0601ffdfc4.mp4
+
+## POST Comand Demo
+https://user-images.githubusercontent.com/68162866/226898657-196e34f6-8a49-4a01-ba28-4f3dad44fedd.mp4
+
