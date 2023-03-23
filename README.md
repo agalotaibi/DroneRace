@@ -10,11 +10,11 @@ DroneRace is an API that contains drone pilots information and drone performance
 4. Postman
 
 ## Functions
-1. POST a data into the piolt and drone database.
-2. UPDATE data in the piolt and drone database.
-3. DELETE data from the piolt and drone database.
-4. GET all data from the piolt and drone database
-5. GET data of a certin piolt or drone from the database using ID.
+1. POST data into the pilot and drone database.
+2. UPDATE data in the pilot and drone database.
+3. DELETE data from the pilot and drone database.
+4. GET all data from the pilot and drone database
+5. GET data of a certain pilot or drone from the database using ID.
 
 ## ER digram 
 <img width="596" alt="Screenshot 2023-03-21 at 3 38 02 PM" src="https://user-images.githubusercontent.com/68162866/226635040-38c925e9-6499-46fe-bf0e-a722e6190403.png">
