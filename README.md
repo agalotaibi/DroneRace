@@ -30,7 +30,7 @@ The output depends on the CRUD opration.
 - GET + URL + ID: returns data of a certin drone
 - POST + URL: adds data to the database
 - DELETE + URL: deletes data from the database
-- DELETE + URL + ID: deletes data of a certin drone
+- DELETE + URL + ID deletes data of a certin drone
 
 -----------------------------
 
